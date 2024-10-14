@@ -5,6 +5,7 @@
 .left_container {
     -fx-background-color : #F5FFF3;
     -fx-background-radius: 10;
+    -fx-padding:10;
     -fx-effect : dropshadow(two-pass-box,#AAAAAA,5,0,0,4);
 }
 Button:hover{
