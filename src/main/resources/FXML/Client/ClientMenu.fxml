@@ -9,10 +9,10 @@
 <?import javafx.scene.text.Text?>
 
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0"
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0"
       prefWidth="180.0" styleClass="main_menu_container" stylesheets="@../../Styles/ClientMenu.css"
       xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.aadhesh.bankingapplication.Controllers.Client.ClientMenuController">
-   <AnchorPane prefHeight="730.0" prefWidth="160.0" styleClass="left_container">
+   <AnchorPane prefHeight="800.0" prefWidth="160.0" styleClass="left_container">
       <VBox prefHeight="80.0" prefWidth="160.0" styleClass="title_container" AnchorPane.leftAnchor="0.0"
             AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <FontAwesomeIconView glyphName="BANK" size="30"/>

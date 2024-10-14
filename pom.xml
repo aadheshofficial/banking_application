@@ -15,11 +15,7 @@
     </properties>
 
     <dependencies>
-        <dependency>
-            <groupId>org.openjfx</groupId>
-            <artifactId>javafx-controls</artifactId>
-            <version>17.0.6</version>
-        </dependency>
+
         <dependency>
             <groupId>de.jensd</groupId>
             <artifactId>fontawesomefx-fontawesome</artifactId>
@@ -30,10 +26,30 @@
             <artifactId>sqlite-jdbc</artifactId>
             <version>3.43.0.0 </version>
         </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.openjfx</groupId>-->
+<!--            <artifactId>javafx-base</artifactId>-->
+<!--            <version>20.0.1</version>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>org.openjfx</groupId>-->
+<!--            <artifactId>javafx-controls</artifactId>-->
+<!--            <version>20.0.1</version>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>org.openjfx</groupId>-->
+<!--            <artifactId>javafx-fxml</artifactId>-->
+<!--            <version>20.0.1</version>-->
+<!--        </dependency>-->
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-controls</artifactId>
+            <version>20.0.1</version>
+        </dependency>
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-fxml</artifactId>
-            <version>17.0.6</version>
+            <version>20.0.1</version>
         </dependency>
         <dependency>
             <groupId>org.controlsfx</groupId>
