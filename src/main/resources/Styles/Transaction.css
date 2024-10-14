@@ -9,7 +9,7 @@
 .transactions_container .list_view{
     -fx-background-color : #EEEEEE;
     -fx-padding : 10;
-    -fx-spacing 5;
+    -fx-spacing :5;
 }
 
 .transactions_container .list_view .list_cell{
