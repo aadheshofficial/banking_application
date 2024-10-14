@@ -22,7 +22,7 @@
         <TextField fx:id="payee_address_field" styleClass="input-field" />
         <Label text="Password" />
         <PasswordField fx:id="password_field" styleClass="input-field" />
-        <Button fx:id="login_button" mnemonicParsing="false" text="Button" />
-        <Label fx:id="error_label" styleClass="error-label" text="error" />
+        <Button fx:id="login_button" mnemonicParsing="false" text="Login" />
+        <Label fx:id="error_label" styleClass="error-label" text=" " />
     </VBox>
 </AnchorPane>

@@ -1,19 +1,30 @@
 package com.aadhesh.bankingapplication.Views;
 
 import com.aadhesh.bankingapplication.Controllers.Client.ClientController;
+import javafx.beans.property.SimpleStringProperty;
+import javafx.beans.property.StringProperty;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
 public class ViewFactory {
+    private StringProperty clientSelectedMenuItem;
 //    client view
     private AnchorPane dashboardView;
     private AnchorPane transactionView;
 
 
     public ViewFactory(){
+        this.clientSelectedMenuItem = new SimpleStringProperty("");
+    }
 
+    public StringProperty getClientSelectedMenuItem() {
+        return clientSelectedMenuItem;
+    }
+
+    public void setClientSelectedMenuItem(String clientSelectedMenuItem) {
+        this.clientSelectedMenuItem.set(clientSelectedMenuItem);
     }
 
     public AnchorPane getDashboardView(){

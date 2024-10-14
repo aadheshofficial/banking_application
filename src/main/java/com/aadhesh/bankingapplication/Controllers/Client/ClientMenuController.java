@@ -1,5 +1,6 @@
 package com.aadhesh.bankingapplication.Controllers.Client;
 
+import com.aadhesh.bankingapplication.Models.Model;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 
@@ -16,6 +17,24 @@ public class ClientMenuController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+        addListeners();
 
+    }
+    private void addListeners(){
+        dashboard_button.setOnAction(actionEvent -> onDashboard());
+        transaction_button.setOnAction(actionEvent -> onTransaction());
+        account_button.setOnAction(actionEvent -> onAccount());
+    }
+
+    private void onAccount() {
+        Model.getInstance().getViewFactory().getClientSelectedMenuItem().set("Account");
+    }
+
+    private void onTransaction() {
+        Model.getInstance().getViewFactory().getClientSelectedMenuItem().set("Transaction");
+    }
+
+    private void onDashboard() {
+        Model.getInstance().getViewFactory().getClientSelectedMenuItem().set("Dashboard");
     }
 }
