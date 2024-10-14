@@ -9,7 +9,7 @@ import javafx.stage.Stage;
 public class ViewFactory {
 //    client view
     private AnchorPane dashboardView;
-    private Stage stage = new Stage();
+
 
     public ViewFactory(){
 
@@ -43,8 +43,12 @@ public class ViewFactory {
         } catch (Exception e){
             System.out.println("Error while loading window "+ e.getMessage());
         }
+        Stage stage = new Stage();
         stage.setScene(scene);
         stage.setTitle("Phoenix Bank");
         stage.show();
+    }
+    public void CloseStage(Stage stage){
+        stage.close();
     }
 }
