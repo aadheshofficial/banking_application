@@ -9,11 +9,13 @@ import javafx.stage.Stage;
 public class ViewFactory {
 //    client view
     private AnchorPane dashboardView;
+    private AnchorPane transactionView;
 
 
     public ViewFactory(){
 
     }
+
     public AnchorPane getDashboardView(){
         if(dashboardView == null){
             try{
@@ -25,10 +27,24 @@ public class ViewFactory {
         return dashboardView;
 
     }
+
+    public AnchorPane getTransactionView() {
+        if(transactionView == null){
+            try{
+                transactionView = new FXMLLoader(getClass().getResource("/FXML/Client/Transaction.fxml")).load();
+            } catch (Exception e) {
+                System.out.println("Error while loading window "+e.getMessage());
+            }
+        }
+        return transactionView;
+
+    }
+
     public void showLoginWindow(){
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/FXML/Login.fxml"));
         CreateStage(loader);
     }
+
     public void showClientWindow(){
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/FXML/Client/Client.fxml"));
         ClientController clientController = new ClientController();
@@ -36,6 +52,7 @@ public class ViewFactory {
         CreateStage(loader);
 
     }
+
     public void CreateStage(FXMLLoader loader){
         Scene scene = null;
         try{
@@ -48,6 +65,7 @@ public class ViewFactory {
         stage.setTitle("Phoenix Bank");
         stage.show();
     }
+
     public void CloseStage(Stage stage){
         stage.close();
     }
