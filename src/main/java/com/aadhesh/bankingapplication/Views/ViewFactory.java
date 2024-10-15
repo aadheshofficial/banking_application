@@ -13,6 +13,7 @@ public class ViewFactory {
 //    client view
     private AnchorPane dashboardView;
     private AnchorPane transactionView;
+    private AnchorPane accountView;
 
 
     public ViewFactory(){
@@ -49,6 +50,17 @@ public class ViewFactory {
         }
         return transactionView;
 
+    }
+
+    public AnchorPane getAccountView() {
+        if(accountView == null){
+            try{
+                accountView = new FXMLLoader(getClass().getResource("/FXML/Client/Account.fxml")).load();
+            } catch (Exception e){
+                System.out.println("Error while loading Account window "+ e.getMessage());
+            }
+        }
+        return accountView;
     }
 
     public void showLoginWindow(){

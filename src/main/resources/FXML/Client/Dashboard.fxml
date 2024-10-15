@@ -19,7 +19,7 @@
             fx:controller="com.aadhesh.bankingapplication.Controllers.Client.DashboardController">
    <Text fx:id="user_name" layoutX="48.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="user_name"
          text="Hi Customer" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="30.0"/>
-   <Label fx:id="login_date" layoutX="797.0" layoutY="37.0" styleClass="date_label" text="11-10-20204"
+   <Label fx:id="login_date" layoutX="797.0" layoutY="37.0" styleClass="date_label" text="15-10-2024"
           AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="27.0"/>
    <Label layoutX="33.0" layoutY="104.0" styleClass="section_title" text="My Accounts" AnchorPane.leftAnchor="20.0"
           AnchorPane.topAnchor="90.0"/>
